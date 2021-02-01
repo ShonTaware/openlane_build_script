@@ -1,10 +1,9 @@
-# openlane_build_script
+# OpenLANE Environment Setup
 This script builds openlane and all its dependencies on an Ubuntu (only) System.
 The scripts in this repo are namely:
  - openlane_script_rc6.sh
- - openlane_script_wo_depends.sh
- 
-**openlane_script_rc6.sh** is a standalone script where it builds openlane (latest rc6 version) and all its dependencies; while **openlane_script_wo_depends.sh** works in conjunction with [vsdflow script](https://github.com/kunalg123/vsdflow) and builds only openlane (hence lesser run-time).
+
+**openlane_script_rc6.sh** is a standalone script where it builds openlane (latest rc6 version) and all its dependencies.
 
 
 # Contents
@@ -14,22 +13,16 @@ The scripts in this repo are namely:
  
 # STEPS TO BUILD OPENLANE
 
-1. `git clone https://github.com/nickson-jose/openlane_build_script`
+1. `git clone https://github.com/ShonTaware/openlane_environment_setup`
 2. `sudo -i` #switch to root user (compulsory).
-3. Change directory to where openlane_build_script folder was cloned. `cd /path/to/openlane_build_script`
+3. Change directory to where openlane_build_script folder was cloned. `cd /path/to/openlane_environment_setup`
 4. Execute the script as below:
 
       - **For standalone build**
        
         - `chmod 775 openlane_script_rc6.sh`
         - `./openlane_script_rc6.sh`
-     
-      - **For build in conjunction with vsdflow**
-       
-        -  Copy the `openlane_script_wo_depends.sh` to vsdflow folder.
-        - `chmod 775  openlane_script_wo_depends.sh`
-        - `./openlane_script_wo_depends.sh`
-      
+           
 5. This script would create following directory structure:
 
 - **For build in conjunction with vsdflow**
