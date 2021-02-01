@@ -105,5 +105,13 @@ chown -R $user_name:$group_name work
 echo
 echo "######CONGRATULATIONS YOU ARE DONE!!########"
 echo
+while true; do
+    read -p "Would you like to test the installation (Y/n) ?" yn
+    case $yn in
+        [Yy]* ) make test; break;;
+        [Nn]* ) exit;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
 exit
 exit
